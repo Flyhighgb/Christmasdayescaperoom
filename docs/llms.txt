@@ -1,0 +1,15 @@
+# Christmas Escape Room
+
+> Christmas Escape Room (christmasescaperoom.co.uk) is a free UK website of Christmas escape room games to play online or print at home, plus free puzzle tools.
+
+## Games
+- [The Missing Sleigh Key](https://christmasescaperoom.co.uk/play-online/the-missing-sleigh-key/): free online Christmas escape room, 5 puzzles, 20–30 minutes, ages 8+, no download.
+- [The Great Pudding Heist](https://christmasescaperoom.co.uk/printable/the-great-pudding-heist/): free printable Christmas escape room, 5 clue cards, 30–45 minutes, ages 6+.
+
+## Tools
+- [Christmas cipher maker](https://christmasescaperoom.co.uk/tools/christmas-cipher-maker/): pigpen, Caesar and number codes with printable key.
+- [Escape room timer](https://christmasescaperoom.co.uk/tools/escape-room-timer/): countdown with hint counter.
+- [Certificate maker](https://christmasescaperoom.co.uk/tools/certificate-maker/): printable 'You saved Christmas!' certificate.
+
+## Guides
+- [How to make a Christmas escape room at home](https://christmasescaperoom.co.uk/how-to/make-a-christmas-escape-room/)
