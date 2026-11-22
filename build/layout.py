@@ -1,5 +1,5 @@
 """Shared layout for christmasescaperoom.co.uk static pages."""
-import json, os
+import json, os, re
 
 DOMAIN = "https://christmasescaperoom.co.uk"
 SITE = "Christmas Escape Room"
@@ -95,8 +95,8 @@ def page(path, title, description, body, crumbs=None, schema=None, active=None, 
 <footer class="site-footer"><div class="wrap">
 <div class="foot-grid">
 <div><h4>Christmas Escape Room</h4><p>Free Christmas escape room games for families, classrooms, care homes and office parties. Made in the UK.</p></div>
-<div><h4>Play</h4><ul><li><a href="{r}play-online/index.html">Play online free</a></li><li><a href="{r}play-online/the-missing-sleigh-key/index.html">The Missing Sleigh Key</a></li><li><a href="{r}play-online/office-party-escape/index.html">Office party escape room</a></li><li><a href="{r}printable/index.html">Printable games</a></li><li><a href="{r}printable/scrooges-safe/index.html">For adults</a> · <a href="{r}printable/elf-academy-final-exam/index.html">Teens</a></li><li><a href="{r}printable/rudolphs-lost-bells/index.html">Toddlers</a> · <a href="{r}printable/christmas-memory-lane/index.html">Care homes</a></li><li><a href="{r}printable/advent-calendar/index.html">Advent calendar</a></li></ul></div>
-<div><h4>Tools</h4><ul><li><a href="{r}tools/christmas-cipher-maker/index.html">Christmas cipher maker</a></li><li><a href="{r}tools/escape-room-timer/index.html">Escape room timer</a></li><li><a href="{r}tools/certificate-maker/index.html">Certificate maker</a></li></ul></div>
+<div><h4>Play</h4><ul><li><a href="{r}play-online/index.html">Play online free</a></li><li><a href="{r}play-online/the-missing-sleigh-key/index.html">The Missing Sleigh Key</a></li><li><a href="{r}play-online/office-party-escape/index.html">Office party escape room</a></li><li><a href="{r}printable/index.html">Printable games</a></li><li><a href="{r}printable/scrooges-safe/index.html">For adults</a> · <a href="{r}printable/elf-academy-final-exam/index.html">Teens</a></li><li><a href="{r}printable/rudolphs-lost-bells/index.html">Toddlers</a> · <a href="{r}printable/christmas-memory-lane/index.html">Care homes</a></li><li><a href="{r}printable/advent-calendar/index.html">Advent</a> · <a href="{r}printable/christmas-eve/index.html">Christmas Eve</a></li><li><a href="{r}printable/boxing-day/index.html">Boxing Day</a> · <a href="{r}printable/new-years-eve/index.html">New Year’s Eve</a></li><li><a href="{r}printable/ks2-classroom/index.html">KS2 classroom</a> · <a href="{r}play-online/ten-minute-christmas-escape-room/index.html">10-minute game</a></li></ul></div>
+<div><h4>Tools</h4><ul><li><a href="{r}tools/escape-room-builder/index.html">Escape room builder</a></li><li><a href="{r}tools/christmas-cipher-maker/index.html">Christmas cipher maker</a></li><li><a href="{r}tools/escape-room-timer/index.html">Escape room timer</a></li><li><a href="{r}tools/certificate-maker/index.html">Certificate maker</a></li></ul></div>
 <div><h4>Guides</h4><ul><li><a href="{r}how-to/make-a-christmas-escape-room/index.html">How to make a Christmas escape room</a></li><li><a href="{r}how-to/christmas-riddles-with-answers/index.html">30 Christmas riddles with answers</a></li><li><a href="{r}about/index.html">About Paul</a></li><li>hello@christmasescaperoom.co.uk</li></ul></div>
 </div>
 <p class="copyright">© <span id="year">2026</span> Christmas Escape Room · christmasescaperoom.co.uk · Free to use at home, school and work.</p>
@@ -105,6 +105,7 @@ def page(path, title, description, body, crumbs=None, schema=None, active=None, 
 </body>
 </html>
 """
+    html = re.sub(r'href="([^"#:]*?)index\.html', lambda m: 'href="' + (m.group(1) or './'), html)
     d = os.path.join(OUT, path)
     os.makedirs(d, exist_ok=True)
     with open(os.path.join(d, "index.html"), "w") as f:

@@ -10,6 +10,10 @@ GUMROAD = {
     "rudolphs-lost-bells": "",
     "christmas-memory-lane": "",
     "advent-calendar": "",
+    "christmas-eve": "",
+    "boxing-day": "",
+    "new-years-eve": "",
+    "ks2-classroom": "",
 }
 
 ALPHA = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"

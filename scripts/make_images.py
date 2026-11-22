@@ -11,7 +11,14 @@ ITEMS=[("default","Free Christmas escape rooms","Play online or print at home","
 ("rudolphs-lost-bells","Rudolph’s Lost Bells","Picture escape room for toddlers · Ages 3–5","🔔🦌"),
 ("christmas-memory-lane","Christmas Memory Lane","Large-print escape room for care homes","☕🎁"),
 ("advent-calendar","Escape Room Advent Calendar","24 free printable puzzles · 1–24 December","📅⭐"),
-("christmas-riddles-with-answers","30 Christmas Riddles","With answers · for kids, teens and adults","❓🎄")]
+("christmas-riddles-with-answers","30 Christmas Riddles","With answers · for kids, teens and adults","❓🎄"),
+("christmas-eve","Christmas Eve Escape Room","A bedtime mission that ends under the pillow","🌙🎅"),
+("boxing-day","Boxing Day Escape Room","The Leftovers Lockdown · Ages 8+","🍫🦃"),
+("new-years-eve","New Year’s Eve Escape Room","Countdown to Midnight · Free printable","🕛🎉"),
+("ks2-classroom","KS2 Christmas Escape Room","Times tables, adjectives and fractions · Years 3–6","🏫🧝"),
+("ten-minute-christmas-escape-room","10-Minute Christmas Escape Room","Three quick puzzles · Free to play online","⏱️🎄"),
+("no-printer-christmas-escape-room","No Printer? No Problem","Christmas escape rooms you can play without printing","📱✏️"),
+("escape-room-builder","Christmas Escape Room Builder","Make your own in 2 minutes · Free","🧩🎁")]
 def html(t,sub,emo,w,h):
     big = h>w
     return f"""<html><body style="margin:0;width:{w}px;height:{h}px;background:radial-gradient(900px 500px at 80% 0%,#1f5a49,transparent 60%),#0c2a22;font-family:Georgia,serif;color:#fff;display:flex;flex-direction:column;justify-content:center;padding:0 70px;box-sizing:border-box;position:relative;overflow:hidden">
@@ -25,7 +32,7 @@ def html(t,sub,emo,w,h):
 </div></body></html>"""
 async def main():
   async with async_playwright() as p:
-    b=await p.chromium.launch(args=['--no-sandbox'])
+    b=await p.chromium.launch(executable_path=os.environ.get('CHROME_PATH') or None,args=['--no-sandbox'])
     pg=await b.new_page()
     for slug,t,sub,e in ITEMS:
       for w,h,folder in [(1200,630,'og'),(1000,1500,'pins')]:

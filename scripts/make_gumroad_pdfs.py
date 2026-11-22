@@ -11,8 +11,8 @@ const s=document.createElement('style');s.textContent='@media print{.answer,.spe
 const foot=document.createElement('p');foot.className='print-only';foot.innerHTML='Free online games, tools and more printables at <b>christmasescaperoom.co.uk</b> · © 2026 Paul, Christmas Escape Room. Free for home, school and care-home use.';document.querySelector('main').appendChild(foot);}"""
 async def main():
   async with async_playwright() as p:
-    b=await p.chromium.launch(args=['--no-sandbox']);pg=await b.new_page()
-    for slug in ["the-great-pudding-heist","scrooges-safe","elf-academy-final-exam","rudolphs-lost-bells","christmas-memory-lane","advent-calendar"]:
+    b=await p.chromium.launch(executable_path=os.environ.get('CHROME_PATH') or None,args=['--no-sandbox']);pg=await b.new_page()
+    for slug in ["the-great-pudding-heist","scrooges-safe","elf-academy-final-exam","rudolphs-lost-bells","christmas-memory-lane","advent-calendar","christmas-eve","boxing-day","new-years-eve","ks2-classroom"]:
       await pg.goto(f'{DOCS}/printable/{slug}/index.html');await pg.evaluate(JS)
       await pg.emulate_media(media='print')
       await pg.pdf(path=f'{ROOT}/gumroad/{slug}.pdf',format='A4',print_background=True,margin={'top':'14mm','bottom':'14mm','left':'14mm','right':'14mm'})

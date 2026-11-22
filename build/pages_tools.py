@@ -99,7 +99,7 @@ render();
 </div>
 </div>
 {tool_js}"""
-    page(path, "Christmas Cipher Maker – Free Pigpen, Caesar & Number Code Generator",
+    page(path, "Christmas Cipher Maker – Free Pigpen & Caesar Code Generator",
          "Free Christmas cipher maker: turn any message into a pigpen cipher, Caesar shift or A=1 number code, with a printable key. Perfect for escape room clues.",
          body, crumbs=[("Tools", "tools/"), ("Christmas cipher maker", path)],
          schema=[app_schema("Christmas Cipher Maker", path, "Free pigpen, Caesar and number code generator for Christmas escape rooms."), faq_schema(faq)], active="Tools")
@@ -154,7 +154,7 @@ draw();
 {faq_html(faq)}
 </div>
 {timer_js}"""
-    page(path, "Escape Room Timer – Free Christmas Countdown Clock with Hints",
+    page(path, "Escape Room Timer – Free Countdown Clock with Hints",
          "Free escape room countdown timer for Christmas party games. 15–60 minute presets, full screen for the TV, hint counter with penalties and a festive chime.",
          body, crumbs=[("Tools", "tools/"), ("Escape room timer", path)],
          schema=[app_schema("Christmas Escape Room Timer", path, "Free countdown timer with hint counter for escape room games."), faq_schema(faq)], active="Tools")
@@ -211,7 +211,7 @@ Object.keys(f).forEach(function(k){f[k].addEventListener('input',draw)}); draw()
 </div>
 <div class="wrap narrow no-print">{faq_html(faq)}</div>
 {cert_js}"""
-    page(path, "Free Christmas Escape Room Certificate Maker – ‘You Saved Christmas!’",
+    page(path, "Christmas Escape Room Certificate Maker – Free Printable",
          "Make and print a free ‘You saved Christmas!’ certificate for your escape room winners. Add names, game and finishing time. A4 landscape.",
          body, crumbs=[("Tools", "tools/"), ("Certificate maker", path)],
          schema=[app_schema("Christmas Escape Room Certificate Maker", path, "Free printable certificate for escape room winners."), faq_schema(faq)], active="Tools", extra_head=extra)

@@ -25,7 +25,7 @@ def build():
     online_game(
         slug="the-missing-sleigh-key", name="The Missing Sleigh Key",
         h1="The Missing Sleigh Key: free online Christmas escape room",
-        title="The Missing Sleigh Key – Free Online Christmas Escape Room (No Download)",
+        title="Free Online Christmas Escape Room – The Missing Sleigh Key",
         description="Play a free online Christmas escape room. Crack 5 festive locks to find Santa’s sleigh key. 20–30 minutes, ages 8+, works on phones, no download or sign-up.",
         answer="The Missing Sleigh Key is a free Christmas escape room you play in your browser. Crack five festive locks to find Santa’s lost key on Christmas Eve. It takes 20–30 minutes, suits 1–6 players aged 8+, and needs no download, printer or sign-up.",
         spec=[("Ages", "8+ (5–7 with a grown-up)"), ("Players", "1–6, or teams over Zoom"), ("Time", "20–30 minutes"), ("Difficulty", "Easy–medium"), ("Prep", "None"), ("You need", "A phone, tablet or computer. Paper and pen help."), ("Puzzles", "5")],
@@ -82,7 +82,7 @@ def build():
     online_game(
         slug="office-party-escape", name="The Office Party Escape",
         h1="Free office Christmas party escape room (online, for teams)",
-        title="Free Office Christmas Party Escape Room – Online Team Game | No Host Needed",
+        title="Free Office Christmas Party Escape Room – Online Team Game",
         description="Free online Christmas escape room for office parties and remote teams. 5 puzzles, 20–30 minutes, teams of 2–6, no host, no booking. Works on Zoom and Teams.",
         answer="The Office Party Escape is a free online Christmas escape room for work teams. Split into teams of 2–6, open the link on a laptop or over Zoom or Teams, and race to crack five office-themed puzzles in 20–30 minutes. No host, booking or payment needed.",
         spec=[("Players", "Teams of 2–6; any number of teams"), ("Ages", "Adults (14+)"), ("Time", "20–30 minutes"), ("Difficulty", "Medium"), ("Prep", "None. Send the link."), ("Works on", "Laptop, phone, Zoom, Teams, Google Meet"), ("Cost", "Free"), ("Puzzles", "5")],
@@ -130,7 +130,7 @@ def build():
     printable_game(
         slug="the-great-pudding-heist", name="The Great Pudding Heist",
         h1="The Great Pudding Heist: free printable Christmas escape room",
-        title="The Great Pudding Heist – Free Printable Christmas Escape Room for Kids & Families",
+        title="Free Printable Christmas Escape Room for Kids & Families",
         description="Free printable Christmas escape room: 5 clue cards to hide round the house. Ages 6+, 30–45 minutes, 10-minute set-up, no padlocks. Answer key included.",
         answer="The Great Pudding Heist is a free printable Christmas escape room for ages 6 and up. Mischief the elf has hidden the Christmas pudding; players follow five clue cards hidden around the house to find it. It takes 10 minutes to set up and 30–45 minutes to play, with no padlocks needed.",
         spec=[("Ages", "6+ (4–5 with help)"), ("Players", "2–8"), ("Time", "30–45 minutes"), ("Set-up", "10 minutes"), ("Difficulty", "Easy"), ("You need", "Printer, 6 sheets of A4, pen, a prize (optional)"), ("Puzzles", "5")],
@@ -169,7 +169,7 @@ def build():
     printable_game(
         slug="scrooges-safe", name="Scrooge’s Safe",
         h1="Scrooge’s Safe: free printable Christmas escape room for adults",
-        title="Free Printable Christmas Escape Room for Adults – Scrooge’s Safe",
+        title="Christmas Escape Room for Adults – Free Printable",
         description="A properly tricky free printable Christmas escape room for adults and teens 14+. Pigpen cipher, mirror writing, Caesar shift and a Dickens logic lock. 45–60 minutes.",
         answer="Scrooge’s Safe is a free printable Christmas escape room for adults and teenagers 14+. Based on A Christmas Carol, players crack a Caesar shift, a pigpen cipher, mirror writing and a four-digit logic lock to open Scrooge’s safe. It takes 45–60 minutes for 2–6 players.",
         spec=[("Ages", "14+ and adults"), ("Players", "2–6"), ("Time", "45–60 minutes"), ("Set-up", "15 minutes"), ("Difficulty", "Hard"), ("You need", "Printer, 6 sheets of A4, a hand mirror, a box or bag for the ‘safe’, optional 4-digit padlock"), ("Puzzles", "4 + final lock")],
@@ -205,7 +205,7 @@ def build():
     printable_game(
         slug="elf-academy-final-exam", name="Elf Academy Final Exam",
         h1="Elf Academy Final Exam: printable Christmas escape room for teenagers",
-        title="Christmas Escape Room for Teenagers – Free Printable | Elf Academy Final Exam",
+        title="Christmas Escape Room for Teenagers – Free Printable",
         description="Free printable Christmas escape room for teenagers (ages 11–16). Old-phone texting code, Morse code, missing vowels and a 12 Days of Christmas maths lock. 30–45 minutes.",
         answer="Elf Academy Final Exam is a free printable Christmas escape room for teenagers aged 11–16. Players crack an old-phone texting code, Morse code, a missing-vowels puzzle and a Twelve Days of Christmas maths lock to pass the exam. It takes 30–45 minutes for 2–6 players.",
         spec=[("Ages", "11–16 (adults welcome)"), ("Players", "2–6"), ("Time", "30–45 minutes"), ("Set-up", "10 minutes"), ("Difficulty", "Medium–hard"), ("You need", "Printer, 5 sheets of A4, a prize"), ("Puzzles", "4 + final code")],
@@ -240,7 +240,7 @@ def build():
     printable_game(
         slug="rudolphs-lost-bells", name="Rudolph’s Lost Bells",
         h1="Rudolph’s Lost Bells: Christmas escape room for toddlers and preschoolers",
-        title="Christmas Escape Room for Toddlers & Preschoolers (Ages 3–5) – Free Printable",
+        title="Christmas Escape Room for Toddlers (Ages 3–5) – Free",
         description="A free picture-based Christmas escape room for toddlers and preschoolers aged 3–5. No reading needed: match pictures, count and find Rudolph’s bells. 15–20 minutes.",
         answer="Rudolph’s Lost Bells is a free picture-based Christmas escape room for children aged 3–5. No reading is needed: each card shows a big picture of where to look next, with simple counting and colour games. It takes 15–20 minutes, with a grown-up reading the story.",
         spec=[("Ages", "3–5 (and 6-year-olds who are new to escape rooms)"), ("Players", "1–4 children with a grown-up"), ("Time", "15–20 minutes"), ("Set-up", "5 minutes"), ("Difficulty", "Very easy"), ("Reading needed", "None. Picture clues only."), ("You need", "Printer, 5 sheets of A4, a bell or small treat for the end")],
@@ -275,7 +275,7 @@ def build():
     printable_game(
         slug="christmas-memory-lane", name="Christmas Memory Lane",
         h1="Christmas Memory Lane: a seated escape room for care homes and older adults",
-        title="Christmas Escape Room for Care Homes & Older Adults – Free Large-Print Activity",
+        title="Christmas Escape Room for Care Homes – Free Large Print",
         description="A free large-print Christmas escape room for care home residents and older adults. Seated, 20–30 minutes, gentle festive puzzles that spark memories. Run by one activity coordinator.",
         answer="Christmas Memory Lane is a free large-print Christmas escape room for care home residents and older adults. Played seated around a table, a host reads gentle festive puzzles aloud, and each answer earns a letter or number to open the ‘Christmas box’. It takes 20–30 minutes for groups of 3–10.",
         spec=[("Who for", "Care home residents, day centres, older relatives at home"), ("Players", "3–10, seated"), ("Time", "20–30 minutes"), ("Set-up", "5 minutes"), ("Difficulty", "Gentle"), ("Format", "Large print (18pt+), host reads aloud, no moving around"), ("You need", "Printer, a box or tin with a treat inside (mince pies work well)")],
@@ -368,7 +368,7 @@ def build_advent():
     schema = {"@type": ["Game", "CreativeWork"], "name": "Christmas Escape Room Advent Calendar", "url": DOMAIN + "/" + path,
               "description": "24 free printable advent puzzles that spell a secret message by Christmas Eve.", "isAccessibleForFree": True,
               "inLanguage": "en-GB", "typicalAgeRange": "5-9", "author": {"@id": PERSON_ID}, "image": f"{DOMAIN}/assets/og/{slug}.png"}
-    page(path, "Christmas Escape Room Advent Calendar – 24 Free Printable Puzzles",
+    page(path, "Christmas Escape Room Advent Calendar – 24 Free Puzzles",
          "Free printable Christmas escape room advent calendar: one 2-minute puzzle a day from 1–24 December that spells a secret message. Ages 5–9. Answers included.",
          body, crumbs=[("Printable", "printable/"), ("Advent calendar", path)], schema=[schema, faq_schema(faq)], active="Printable", og_image=f"assets/og/{slug}.png")
 
@@ -441,7 +441,7 @@ def build_riddles():
 {faq_html(faq)}
 </div>"""
     from layout import article_schema
-    page(path, "30 Christmas Riddles with Answers – Kids, Teens & Adults | Christmas Escape Room",
+    page(path, "30 Christmas Riddles with Answers for Kids, Teens & Adults",
          "30 Christmas riddles with answers, sorted by age: easy for kids, medium for 9–12s and hard for teens and adults. Perfect for escape rooms, crackers and classrooms.",
          body, crumbs=[("Christmas riddles with answers", path)],
          schema=[article_schema(path, "30 Christmas riddles with answers", "Christmas riddles sorted by age, with answers."), faq_schema(faq)], active="How to", og_image="assets/og/christmas-riddles-with-answers.png")

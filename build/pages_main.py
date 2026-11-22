@@ -25,6 +25,21 @@ GAMES = [
     {"name": "Escape Room Advent Calendar", "path": "printable/advent-calendar/", "format": "Printable", "icon": "📅", "for": "Advent",
      "ages": "5–9", "players": "1–4", "time": "2 min a day", "prep": "Print",
      "blurb": "One tiny puzzle a day from 1–24 December. The letters spell a secret message by Christmas Eve."},
+    {"name": "The Night Before Christmas Mission", "path": "printable/christmas-eve/", "format": "Printable", "icon": "🌙", "for": "Christmas Eve",
+     "ages": "5–10", "players": "1–6", "time": "20–30 min", "prep": "10 min",
+     "blurb": "A Christmas Eve bedtime escape room: pyjamas, Rudolph’s carrot, Santa’s mince pie, and the last clue under the pillow."},
+    {"name": "The Leftovers Lockdown", "path": "printable/boxing-day/", "format": "Printable", "icon": "🍫", "for": "Boxing Day",
+     "ages": "8+", "players": "2–8", "time": "30–45 min", "prep": "10 min",
+     "blurb": "Grandad has locked the chocolate tin. A Boxing Day escape room for every generation."},
+    {"name": "Countdown to Midnight", "path": "printable/new-years-eve/", "format": "Printable", "icon": "🕛", "for": "New Year’s Eve",
+     "ages": "10+", "players": "2–8", "time": "30–45 min", "prep": "10 min",
+     "blurb": "Find the party poppers before midnight. A New Year’s Eve escape room for families, teens and adults."},
+    {"name": "The Elf Inspection", "path": "printable/ks2-classroom/", "format": "Printable", "icon": "🏫", "for": "KS2 classroom",
+     "ages": "Years 3–6", "players": "Teams of 4–6", "time": "45–60 min", "prep": "10 min",
+     "blurb": "A KS2 Christmas escape room: times tables, adjectives and fractions, with a teacher answer key."},
+    {"name": "The 10-Minute Workshop Escape", "path": "play-online/ten-minute-christmas-escape-room/", "format": "Play online", "icon": "⏱️", "for": "Quick play",
+     "ages": "7+", "players": "1–6", "time": "10 min", "prep": "None",
+     "blurb": "Three quick puzzles to escape Santa’s workshop. Great for lesson starters and breaks."},
 ]
 
 
@@ -48,6 +63,7 @@ TOOLS = [
     ("⏱️", "Escape room timer", "tools/escape-room-timer/", "A big countdown clock for the TV or laptop, with a hint counter and a chime when time runs out."),
     ("🏅", "Certificate maker", "tools/certificate-maker/", "Make a ‘You saved Christmas!’ certificate with your team’s names and finishing time."),
 ]
+TOOLS.insert(0, ("🧩", "Escape room builder", "tools/escape-room-builder/", "Make your own Christmas escape room in 2 minutes: pick an age, story and hiding places, then print."))
 
 
 def tool_cards(r):
@@ -87,7 +103,22 @@ def build():
 <a class="card" href="printable/christmas-memory-lane/index.html"><h3>Care homes</h3><p>Seated, large print, gentle.</p></a>
 <a class="card" href="play-online/the-missing-sleigh-key/index.html"><h3>Zoom &amp; far-away family</h3><p>Play together online on any device.</p></a>
 <a class="card" href="printable/advent-calendar/index.html"><h3>Advent</h3><p>A puzzle a day, 1–24 December.</p></a>
+<a class="card" href="printable/ks2-classroom/index.html"><h3>KS2 classrooms</h3><p>Times tables, adjectives and fractions.</p></a>
+<a class="card" href="play-online/no-printer-christmas-escape-room/index.html"><h3>No printer</h3><p>Play online, or handwrite 4 clues.</p></a>
 </div></section>
+
+<section><h2>Games for every day of Christmas</h2>
+<div class="grid aud-grid">
+<a class="card" href="printable/advent-calendar/index.html"><h3>1–24 December</h3><p>Escape room advent calendar</p></a>
+<a class="card" href="printable/christmas-eve/index.html"><h3>Christmas Eve</h3><p>A bedtime mission that ends under the pillow</p></a>
+<a class="card" href="printable/the-great-pudding-heist/index.html"><h3>Christmas Day</h3><p>The Great Pudding Heist</p></a>
+<a class="card" href="printable/boxing-day/index.html"><h3>Boxing Day</h3><p>The Leftovers Lockdown</p></a>
+<a class="card" href="printable/new-years-eve/index.html"><h3>New Year’s Eve</h3><p>Countdown to Midnight</p></a>
+</div></section>
+
+<section><h2>Make your own</h2>
+<p>Use the free <a href="tools/escape-room-builder/index.html"><strong>Christmas escape room builder</strong></a>: choose an age, a story and the hiding places in your home, and it creates the clue cards and answer sheet for you.</p>
+</section>
 
 <section><h2>Compare the games</h2>{compare_table('')}</section>
 
@@ -110,7 +141,7 @@ def build():
 <div class="narrow">{faq_html(home_faq)}</div>
 </div>
 """
-    page("", "Free Christmas Escape Rooms – Play Online or Print at Home | Christmas Escape Room",
+    page("", "Free Christmas Escape Rooms – Play Online or Print at Home",
          "Free Christmas escape room games for kids, families, adults and office parties. Play online with no download, or print clue cards. Plus free cipher, timer and certificate tools.",
          body, schema=[faq_schema(home_faq)])
 
@@ -131,10 +162,11 @@ def build():
 <div class="grid">{cards}</div>
 <h2>Playing with family far away or at work</h2>
 <p>Share your screen on a video call and solve the clues together, or send the link to each household and compare times. For a work party, split into teams of 2–6 and use our <a href="../tools/escape-room-timer/index.html">escape room timer</a> on the big screen.</p>
+<p>No printer at home? See <a href="no-printer-christmas-escape-room/index.html">how to run a Christmas escape room without a printer</a>.</p>
 <p>Prefer paper and hiding clues around the house? Try our <a href="../printable/index.html">printable Christmas escape rooms</a>.</p>
 {faq_html(hub_faq)}
 </div>"""
-    page("play-online/", "Free Online Christmas Escape Room – No Download | Christmas Escape Room",
+    page("play-online/", "Free Online Christmas Escape Rooms – No Download",
          "Play a free Christmas escape room online with no download or sign-up. Works on phones, great over Zoom and for office parties. 20–30 minutes, ages 8+.",
          body, crumbs=[("Play online", "play-online/")], schema=[faq_schema(hub_faq)], active="Play online")
 
@@ -162,7 +194,7 @@ def build():
 </ul>
 {faq_html(pfaq)}
 </div>"""
-    page("printable/", "Free Printable Christmas Escape Room Games | Christmas Escape Room",
+    page("printable/", "Free Printable Christmas Escape Rooms for Every Age",
          "Free printable Christmas escape room games for kids, families and adults. Print the clue cards, hide them round the house and save Christmas. Answer key included.",
          body, crumbs=[("Printable", "printable/")], schema=[faq_schema(pfaq)], active="Printable")
 
@@ -174,7 +206,7 @@ def build():
 <p class="answer">Three free tools for anyone making or hosting a Christmas escape room: a cipher maker for secret codes, a big-screen countdown timer, and a certificate maker for the winners.</p>
 </div>
 <div class="wrap"><div class="grid">{tool_cards('../')}</div></div>"""
-    page("tools/", "Free Christmas Escape Room Tools – Cipher Maker, Timer, Certificates",
+    page("tools/", "Free Christmas Escape Room Tools – Builder, Ciphers, Timer",
          "Free tools for making a Christmas escape room: pigpen and Caesar cipher maker, countdown timer with hints, and a printable certificate maker.",
          body, crumbs=[("Tools", "tools/")], active="Tools")
 
@@ -271,7 +303,7 @@ def build():
 </ul>
 {faq_html(howto_faq)}
 </div>"""
-    page(path, "How to Make a Christmas Escape Room at Home (Step by Step) | Christmas Escape Room",
+    page(path, "How to Make a Christmas Escape Room at Home (8 Steps)",
          "How to make a Christmas escape room at home in 8 steps, with 10 puzzle ideas, clue hiding places and tips for kids, teens and adults. Free tools included.",
          body, crumbs=[("How to make a Christmas escape room", path)],
          schema=[article_schema(path, "How to make a Christmas escape room at home", "Step-by-step guide with puzzle ideas and hiding places."), howto_schema, faq_schema(howto_faq)],
