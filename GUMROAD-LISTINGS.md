@@ -50,3 +50,23 @@ A gentle, large-print Christmas escape room for care home residents and older re
 One 2-minute puzzle a day from 1–24 December. Each answer is a letter, and on Christmas Eve they spell a secret festive message.
 - Ages 5–9 · Print once, use all of December
 - Answers included
+
+## 7. The Night Before Christmas Mission – Christmas Eve Escape Room (Ages 5–10)
+**File:** christmas-eve.pdf
+A bedtime escape room for Christmas Eve: pyjamas, Rudolph's carrot, Santa's mince pie, and the final clue under the pillow.
+- Ages 5–10 · 1–6 players · 20–30 minutes · Print-ready A4 PDF with answer key
+
+## 8. The Leftovers Lockdown – Boxing Day Escape Room (Ages 8+)
+**File:** boxing-day.pdf
+Grandad has locked the chocolate tin! A riddle, a Caesar code, a pigpen cipher and a Boxing Day sales maths lock.
+- Ages 8 to adult · 2–8 players · 30–45 minutes
+
+## 9. Countdown to Midnight – New Year's Eve Escape Room (Ages 10+)
+**File:** new-years-eve.pdf
+Find the party poppers before midnight: Roman numeral clock code, backwards message, number code and a countdown lock.
+- Ages 10 to adult · 2–8 players · 30–45 minutes
+
+## 10. The Elf Inspection – KS2 Christmas Escape Room (Years 3–6)
+**File:** ks2-classroom.pdf
+A classroom escape room covering times tables, division, adjectives and fractions, with a teacher answer key.
+- Teams of 4–6 · 45–60 minutes · Print one set per team
