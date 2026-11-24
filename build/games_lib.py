@@ -4,16 +4,16 @@ from layout import page, faq_html, faq_schema, spec_table, DOMAIN, byline, PERSO
 
 # Paste each Gumroad product URL here once listed; the button appears automatically.
 GUMROAD = {
-    "the-great-pudding-heist": "",
-    "scrooges-safe": "",
-    "elf-academy-final-exam": "",
-    "rudolphs-lost-bells": "",
-    "christmas-memory-lane": "",
-    "advent-calendar": "",
-    "christmas-eve": "",
-    "boxing-day": "",
-    "new-years-eve": "",
-    "ks2-classroom": "",
+    "the-great-pudding-heist": "https://sillymonkey85.gumroad.com/l/tivqee",
+    "scrooges-safe": "https://sillymonkey85.gumroad.com/l/jeirvh",
+    "elf-academy-final-exam": "https://sillymonkey85.gumroad.com/l/vocwcx",
+    "rudolphs-lost-bells": "https://sillymonkey85.gumroad.com/l/slbyss",
+    "christmas-memory-lane": "https://sillymonkey85.gumroad.com/l/flrnsj",
+    "advent-calendar": "https://sillymonkey85.gumroad.com/l/dlyhsq",
+    "christmas-eve": "https://sillymonkey85.gumroad.com/l/qabbqv",
+    "boxing-day": "https://sillymonkey85.gumroad.com/l/laoor",
+    "new-years-eve": "https://sillymonkey85.gumroad.com/l/uujtq",
+    "ks2-classroom": "https://sillymonkey85.gumroad.com/l/tleya",
 }
 
 ALPHA = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -52,7 +52,7 @@ def pig_key(s=30):
     return f'<div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center">{cells}</div>'
 
 
-def gumroad_button(slug, label="Get the print-ready PDF"):
+def gumroad_button(slug, label="Print-ready PDF – £3"):
     url = GUMROAD.get(slug, "")
     if not url:
         return ""
