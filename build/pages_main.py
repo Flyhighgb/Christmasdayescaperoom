@@ -4,6 +4,9 @@ GAMES = [
     {"name": "The Missing Sleigh Key", "path": "play-online/the-missing-sleigh-key/", "format": "Play online", "icon": "🔑", "for": "Families",
      "ages": "8+", "players": "1–6", "time": "20–30 min", "prep": "None",
      "blurb": "Santa has lost his sleigh key on Christmas Eve. Crack five festive locks in your browser. Works on phones and over Zoom."},
+    {"name": "Reindeer Rescue: Team Race", "path": "play-online/reindeer-team-race/", "format": "Play online", "icon": "🦌", "for": "Teams & Zoom",
+     "ages": "Adults", "players": "Unlimited teams", "time": "20–30 min", "prep": "None",
+     "blurb": "A free team race for Microsoft Teams, Zoom or the office. Unlimited teams, finish codes and a free leaderboard."},
     {"name": "The Office Party Escape", "path": "play-online/office-party-escape/", "format": "Play online", "icon": "🥧", "for": "Work teams",
      "ages": "Adults", "players": "Teams of 2–6", "time": "20–30 min", "prep": "None",
      "blurb": "A free online team game for office Christmas parties and remote teams. No host, no booking: just send the link."},
@@ -99,7 +102,7 @@ def build():
 <a class="card" href="printable/the-great-pudding-heist/index.html"><h3>Kids &amp; families</h3><p>Hide clues round the house. Ages 6+.</p></a>
 <a class="card" href="printable/elf-academy-final-exam/index.html"><h3>Teenagers</h3><p>Morse, phone codes and maths. Ages 11–16.</p></a>
 <a class="card" href="printable/scrooges-safe/index.html"><h3>Adults</h3><p>A hard Christmas Carol puzzle hunt.</p></a>
-<a class="card" href="play-online/office-party-escape/index.html"><h3>Office parties</h3><p>Free online team game, no host.</p></a>
+<a class="card" href="play-online/reindeer-team-race/index.html"><h3>Office parties &amp; Teams</h3><p>Team race with a free leaderboard.</p></a>
 <a class="card" href="printable/christmas-memory-lane/index.html"><h3>Care homes</h3><p>Seated, large print, gentle.</p></a>
 <a class="card" href="play-online/the-missing-sleigh-key/index.html"><h3>Zoom &amp; far-away family</h3><p>Play together online on any device.</p></a>
 <a class="card" href="printable/advent-calendar/index.html"><h3>Advent</h3><p>A puzzle a day, 1–24 December.</p></a>

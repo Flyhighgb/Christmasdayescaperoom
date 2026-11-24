@@ -18,7 +18,8 @@ ITEMS=[("default","Free Christmas escape rooms","Play online or print at home","
 ("ks2-classroom","KS2 Christmas Escape Room","Times tables, adjectives and fractions · Years 3–6","🏫🧝"),
 ("ten-minute-christmas-escape-room","10-Minute Christmas Escape Room","Three quick puzzles · Free to play online","⏱️🎄"),
 ("no-printer-christmas-escape-room","No Printer? No Problem","Christmas escape rooms you can play without printing","📱✏️"),
-("escape-room-builder","Christmas Escape Room Builder","Make your own in 2 minutes · Free","🧩🎁")]
+("escape-room-builder","Christmas Escape Room Builder","Make your own in 2 minutes · Free","🧩🎁"),
+("reindeer-team-race","Reindeer Rescue: Team Race","Free Christmas team game for Microsoft Teams & Zoom","🦌🏁")]
 def html(t,sub,emo,w,h):
     big = h>w
     return f"""<html><body style="margin:0;width:{w}px;height:{h}px;background:radial-gradient(900px 500px at 80% 0%,#1f5a49,transparent 60%),#0c2a22;font-family:Georgia,serif;color:#fff;display:flex;flex-direction:column;justify-content:center;padding:0 70px;box-sizing:border-box;position:relative;overflow:hidden">

@@ -1,13 +1,13 @@
 import os, sys
 sys.path.insert(0, os.path.dirname(__file__))
-import pages_main, pages_games, pages_tools, pages_occasions, pages_builder
+import pages_main, pages_games, pages_tools, pages_occasions, pages_builder, pages_teamrace
 from layout import DOMAIN, OUT
 
-pages_main.build(); pages_games.build(); pages_tools.build(); pages_occasions.build(); pages_builder.build()
+pages_main.build(); pages_games.build(); pages_tools.build(); pages_occasions.build(); pages_builder.build(); pages_teamrace.build()
 
 urls = []
 for root, dirs, files in os.walk(OUT):
-    if "index.html" in files and "/assets" not in root:
+    if "index.html" in files and "/assets" not in root and 'content="noindex' not in open(os.path.join(root, "index.html")).read():
         p = os.path.relpath(root, OUT)
         urls.append("" if p == "." else p + "/")
 urls.sort(key=lambda u: (u.count("/"), u))
@@ -28,6 +28,7 @@ open(os.path.join(OUT, "llms.txt"), "w").write(
     f"- [10-minute Christmas escape room]({DOMAIN}/play-online/ten-minute-christmas-escape-room/): 3 quick online puzzles.\n"
     f"- [Christmas escape room without a printer]({DOMAIN}/play-online/no-printer-christmas-escape-room/)\n"
     f"- [Scrooge's Safe]({DOMAIN}/printable/scrooges-safe/): adults. [Elf Academy Final Exam]({DOMAIN}/printable/elf-academy-final-exam/): teens. [Rudolph's Lost Bells]({DOMAIN}/printable/rudolphs-lost-bells/): ages 3–5. [Christmas Memory Lane]({DOMAIN}/printable/christmas-memory-lane/): care homes. [Office Party Escape]({DOMAIN}/play-online/office-party-escape/): work teams. [Advent calendar]({DOMAIN}/printable/advent-calendar/).\n\n"
+    f"- [Reindeer Rescue: Team Race]({DOMAIN}/play-online/reindeer-team-race/): free Christmas team game for Microsoft Teams, Zoom and offices; unlimited teams with a free leaderboard.\n\n"
     "## Tools\n"
     f"- [Christmas escape room builder]({DOMAIN}/tools/escape-room-builder/): make a custom printable escape room by age and hiding places.\n"
     f"- [Christmas cipher maker]({DOMAIN}/tools/christmas-cipher-maker/): pigpen, Caesar and number codes with printable key.\n"

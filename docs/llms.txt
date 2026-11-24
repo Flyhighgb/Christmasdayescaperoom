@@ -14,6 +14,8 @@
 - [Christmas escape room without a printer](https://christmasescaperoom.co.uk/play-online/no-printer-christmas-escape-room/)
 - [Scrooge's Safe](https://christmasescaperoom.co.uk/printable/scrooges-safe/): adults. [Elf Academy Final Exam](https://christmasescaperoom.co.uk/printable/elf-academy-final-exam/): teens. [Rudolph's Lost Bells](https://christmasescaperoom.co.uk/printable/rudolphs-lost-bells/): ages 3–5. [Christmas Memory Lane](https://christmasescaperoom.co.uk/printable/christmas-memory-lane/): care homes. [Office Party Escape](https://christmasescaperoom.co.uk/play-online/office-party-escape/): work teams. [Advent calendar](https://christmasescaperoom.co.uk/printable/advent-calendar/).
 
+- [Reindeer Rescue: Team Race](https://christmasescaperoom.co.uk/play-online/reindeer-team-race/): free Christmas team game for Microsoft Teams, Zoom and offices; unlimited teams with a free leaderboard.
+
 ## Tools
 - [Christmas escape room builder](https://christmasescaperoom.co.uk/tools/escape-room-builder/): make a custom printable escape room by age and hiding places.
 - [Christmas cipher maker](https://christmasescaperoom.co.uk/tools/christmas-cipher-maker/): pigpen, Caesar and number codes with printable key.

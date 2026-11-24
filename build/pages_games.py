@@ -123,7 +123,7 @@ def build():
         ages_min=14, players=(2, 6), minutes=30,
         how_to_play="<li>Split into teams of 2–6 and send each team this page’s link.</li><li>Everyone presses <strong>Start</strong> at the same moment.</li><li>Each team notes its time and hints used when it escapes.</li><li>Fastest time wins (add 2 minutes per hint). Print a <a href=\"../../tools/certificate-maker/index.html\">certificate</a> for the winners.</li>",
         extra_sections='<h2>Hosting tips for work parties</h2><ul><li><strong>In the office:</strong> one laptop per team, timer on the meeting room screen.</li><li><strong>Hybrid or remote:</strong> breakout rooms of 3–5 people, one person shares their screen.</li><li><strong>Big groups (30+):</strong> run it as a race in rounds and play the final between the two fastest teams.</li><li><strong>Prizes:</strong> first choice from the Secret Santa pile goes down well.</li></ul>',
-        related=[("Escape room timer", "tools/escape-room-timer/", "put it on the big screen"), ("The Missing Sleigh Key", "play-online/the-missing-sleigh-key/", "easier online game"), ("Scrooge’s Safe", "printable/scrooges-safe/", "printable game for adults")],
+        related=[("Reindeer Rescue: Team Race", "play-online/reindeer-team-race/", "unlimited teams with a free leaderboard"), ("Escape room timer", "tools/escape-room-timer/", "put it on the big screen"), ("The Missing Sleigh Key", "play-online/the-missing-sleigh-key/", "easier online game"), ("Scrooge’s Safe", "printable/scrooges-safe/", "printable game for adults")],
         audience="Work teams")
 
     # ======================================================= PRINTABLE: PUDDING HEIST
